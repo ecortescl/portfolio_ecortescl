@@ -31,7 +31,58 @@ if (typeof window !== "undefined") {
 }
 
 </script>
+<template>
+  <header class="header">
+    <nav class="nav">
+      <router-link to="/" class="logo">Mi Portfolio</router-link>
+      <div class="nav-links" :class="{ 'show': isMenuOpen }">
+        <router-link to="/proyectos" @click="toggleMenu">Proyectos</router-link>
+        <router-link to="/contacto" @click="toggleMenu">Contacto</router-link>
+      </div>
+      <button class="menu-button" @click="toggleMenu">
+        <span class="material-icons">{{ isMenuOpen ? 'close' : 'menu' }}</span>
+      </button>
+    </nav>
+  </header>
+</template>
 
+<script>
+import { ref, onMounted, computed } from 'vue';
+import { useRoute } from 'vue-router';
+
+export default {
+  setup() {
+    const isMenuOpen = ref(false);
+    const route = useRoute();
+    
+    const currentRoute = computed(() => route.path);
+
+    const toggleMenu = () => {
+      isMenuOpen.value = !isMenuOpen.value;
+    };
+
+    onMounted(() => {
+      window.addEventListener('resize', handleResize);
+    });
+
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        isMenuOpen.value = false;
+      }
+    };
+
+    return {
+      isMenuOpen,
+      currentRoute,
+      toggleMenu
+    };
+  }
+};
+</script>
+
+<style scoped>
+/* ... estilos existentes ... */
+</style>
 
 <template>
   <header :class="`main-header ${isSticky ? 'fixed-header' : ''}`">
@@ -79,14 +130,14 @@ if (typeof window !== "undefined") {
               </div>
               <div class="navbar-collapse collapse">
                 <ul class="navigation clearfix">
-                  <li><NuxtLink class="nav-link-click" to="/">Home</NuxtLink></li>
-                  <li><NuxtLink class="nav-link-click" to="/about">about</NuxtLink></li>
+                  <li><NuxtLink class="nav-link-click" to="/">Inicio</NuxtLink></li>
+                  <li><NuxtLink class="nav-link-click" to="/acerca-de-mi">Acerca de mi</NuxtLink></li>
                   <li>
-                    <NuxtLink class="nav-link-click" to="/projects">Projects</NuxtLink>
+                    <NuxtLink class="nav-link-click" to="/proyectos">Proyectos</NuxtLink>
                   </li>
-                  <li><NuxtLink class="nav-link-click" to="/blog">blog</NuxtLink></li>
+                  
                   <li>
-                    <NuxtLink class="nav-link-click" to="/contact">Contact</NuxtLink>
+                    <NuxtLink class="nav-link-click" to="/contacto">Contacto</NuxtLink>
                   </li>
                 </ul>
               </div>

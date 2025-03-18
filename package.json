@@ -18,5 +18,9 @@
     "vue-easy-lightbox": "^1.19.0",
     "vue-router": "latest",
     "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/robots": "^5.2.8",
+    "nuxt-simple-sitemap": "^4.4.1"
   }
 }

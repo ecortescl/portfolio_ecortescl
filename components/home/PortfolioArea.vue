@@ -71,9 +71,9 @@ const props = defineProps({
 
 <template>
   <div class="projects-area" id="portfolio">
-    <div class="custom-icon">
-      <img src="~/assets/images/custom/work-scribble.svg" alt="custom" />
-    </div>
+   
+  
+   
     <div class="container-fluid">
       <div class="row g-4 portfolio-grid">
        

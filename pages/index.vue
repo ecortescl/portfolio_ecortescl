@@ -9,7 +9,7 @@ import Footer from "~/layouts/Footer.vue";
 import Header from "~/layouts/Header.vue"; 
 
 useHead({
-  title: "Wize - Creative Personal Portfolio Nuxt js Template",
+  title: "eCortes.cl - Desarrollador de Software Entusiasta de UX/UI & Infraestructura",
 });
 
  

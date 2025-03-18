@@ -1,45 +1,45 @@
 
-import portfolio_img_1 from "~/assets/images/projects/work1.jpg";
-import portfolio_img_2 from "~/assets/images/projects/work2.jpg";
-import portfolio_img_3 from "~/assets/images/projects/work3.jpg";
-import portfolio_img_4 from "~/assets/images/projects/work4.jpg";
-import portfolio_img_5 from "~/assets/images/projects/work5.jpg";
+import portfolio_img_1 from "~/assets/images/projects/work1.webp";
+import portfolio_img_2 from "~/assets/images/projects/work2.webp";
+import portfolio_img_3 from "~/assets/images/projects/work3.webp";
+import portfolio_img_4 from "~/assets/images/projects/work4.webp";
+import portfolio_img_5 from "~/assets/images/projects/work5.webp";
  
 const portfolio_data = [
   {
     id: 1,
     col: 6,
     img: portfolio_img_1,
-    category: "Mockup",
-    title: "A Branch with Flowers",
+    category: "Woocommerce + Wordpress",
+    title: "jvsur.cl ",
   },
   {
     id: 2,
     col: 6,
     img: portfolio_img_2,
-    category: "Video",
-    title: "Orange Rose Flower",
+    category: "Nuxt 3 + Tailwind",
+    title: "besalcoinmobiliaria.cl",
   },
   {
     id: 3,
     col: 4,
     img: portfolio_img_3,
-    category: "Branding",
-    title: "Green Plant on a Desk",
+    category: "Laravel + Vue3",
+    title: "Locampino.cl",
   },
   {
     id: 4,
     col: 4,
     img: portfolio_img_4,
-    category: "Game",
-    title: "Mobile Application Design",
+    category: "Nuxt 3 + Tailwind",
+    title: "Locampino.cl",
   }, 
   {
     id: 5,
     col: 4,
     img: portfolio_img_5,
-    category: "Game",
-    title: "Mobile Application Design",
+    category: "Nuxt 3 + Tailwind",
+    title: "almachamisero.cl",
   } 
 ];
 

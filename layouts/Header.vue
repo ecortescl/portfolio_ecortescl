@@ -50,10 +50,10 @@
           <div class="about-social text-center">
             <ul>
               <li>
-                <a href="https://www.linkedin.com" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://www.linkedin.com/in/ecortescl/" target="_blank"><i class="ri-linkedin-fill"></i></a>
               </li>
               <li>
-                <a href="https://www.github.com" target="_blank"><i class="ri-github-line"></i></a>
+                <a href="https://github.com/ecortescl" target="_blank"><i class="ri-github-line"></i></a>
               </li>
             </ul>
           </div>

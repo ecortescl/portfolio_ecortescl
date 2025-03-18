@@ -17,7 +17,7 @@
           <!-- START HERO DESIGN AREA -->
           <div class="hero-content wow fadeInUp delay-0-2s">
             <h1>
-              Desarrollador de Software Entusiasta de UX/UI & Infraestructura
+              Desarrollador de Software Entusiasta de UX/UI y SEO
             </h1>
             <h2>
               <img src="https://img.shields.io/badge/-Laravel-F55247?style=flat&logo=laravel&logoColor=white" alt="Laravel" />&nbsp;

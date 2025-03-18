@@ -1,60 +1,5 @@
 
-
-
 <script setup>
-// import portfolio_img_1 from "~/assets/images/projects/work1.jpg";
-// import portfolio_img_2 from "~/assets/images/projects/work2.jpg";
-// import portfolio_img_3 from "~/assets/images/projects/work3.jpg";
-// import portfolio_img_4 from "~/assets/images/projects/work4.jpg";
-// import portfolio_img_5 from "~/assets/images/projects/work5.jpg";
- 
-// const portfolio_data = [
-//   {
-//     id: 1,
-//     col: 6,
-//     img: portfolio_img_1,
-//     category: "Mockup",
-//     title: "A Branch with Flowers",
-//   },
-//   {
-//     id: 2,
-//     col: 6,
-//     img: portfolio_img_2,
-//     category: "Video",
-//     title: "Orange Rose Flower",
-//   },
-//   {
-//     id: 3,
-//     col: 4,
-//     img: portfolio_img_3,
-//     category: "Branding",
-//     title: "Green Plant on a Desk",
-//   },
-//   {
-//     id: 4,
-//     col: 4,
-//     img: portfolio_img_4,
-//     category: "Game",
-//     title: "Mobile Application Design",
-//   }, 
-//   {
-//     id: 5,
-//     col: 4,
-//     img: portfolio_img_5,
-//     category: "Game",
-//     title: "Mobile Application Design",
-//   } 
-// ];
-
-// import { ref } from "vue";
-// // import ImagePopup from "~/components/common/ImagePopup.vue";
-// import "vue-easy-lightbox/external-css/vue-easy-lightbox.css";
-
-// const image_popup = ref(null);
-
-// function handleImagePopup(index) {
-//   image_popup.value.showImg(index);
-// }
 
 const props = defineProps({
 
@@ -92,9 +37,9 @@ const props = defineProps({
               <span class="portfolio-category">{{ item.category }}</span>
               <!-- Caption -->
               <div class="portfolio-caption">
-                <NuxtLink :to="`/single-project/${item.id}`">
-                  <h1>{{ item.title }}</h1>
-                </NuxtLink>
+                
+                  <h3>{{ item.title }}</h3>
+                  <p>{{ item.description }}</p>
               </div>
             </div>
           </a>
@@ -103,13 +48,7 @@ const props = defineProps({
       </div>
     </div>
 
-     <!-- image popup start -->
-     <!-- <ImagePopup
-      ref="image_popup"
-      :images="portfolio_data.map((item) => item.img)"
-    /> -->
-    <!-- image popup end -->
-
+    
 
   </div>
 </template>

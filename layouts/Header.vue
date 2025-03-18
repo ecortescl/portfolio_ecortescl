@@ -37,7 +37,7 @@
                     <NuxtLink class="nav-link-click" to="/acerca-de-mi">Acerca de mi</NuxtLink>
                   </li>
                   <li>
-                    <NuxtLink class="nav-link-click" to="/proyectos">Proyectos</NuxtLink>
+                    <NuxtLink class="nav-link-click" to="/portafolio">Portafolio</NuxtLink>
                   </li>
                   <li>
                     <NuxtLink class="nav-link-click" to="/contacto">Contacto</NuxtLink>

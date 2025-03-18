@@ -9,10 +9,11 @@ const portfolio_data = [
   {
     id: 1,
     col: 6,
-    img: portfolio_img_1,
-    category: "Woocommerce + Wordpress",
-    description: "Desarrollado junto a resolutionsweb.cl",
-    title: "jvsur.cl ",
+    img: portfolio_img_4,
+    category: "Nuxt 3 + Tailwind",
+    title: "Locampino.cl",
+    description: "Desarrollado para la agencia Quiebre.cl",
+   
   },
   {
     id: 2,
@@ -33,14 +34,50 @@ const portfolio_data = [
   {
     id: 4,
     col: 4,
-    img: portfolio_img_4,
-    category: "Nuxt 3 + Tailwind",
-    title: "Locampino.cl",
-    description: "Desarrollado para la agencia Quiebre.cl",
+    img: portfolio_img_1,
+    category: "Woocommerce + Wordpress",
+    description: "Desarrollado junto a resolutionsweb.cl",
+    title: "jvsur.cl ",
   }, 
   {
     id: 5,
     col: 4,
+    img: portfolio_img_5,
+    category: "Nuxt 3 + Tailwind",
+    title: "almachamisero.cl",
+    description: "Desarrollado para la agencia Quiebre.cl",
+  },
+  {
+    id: 6,
+    col: 3,
+    img: portfolio_img_5,
+    category: "Nuxt 3 + Tailwind",
+    title: "almachamisero.cl",
+    description: "Desarrollado para la agencia Quiebre.cl",
+  }
+  ,
+  {
+    id: 7,
+    col: 3,
+    img: portfolio_img_5,
+    category: "Nuxt 3 + Tailwind",
+    title: "almachamisero.cl",
+    description: "Desarrollado para la agencia Quiebre.cl",
+  } 
+  
+  ,
+  {
+    id: 8,
+    col: 3,
+    img: portfolio_img_5,
+    category: "Nuxt 3 + Tailwind",
+    title: "almachamisero.cl",
+    description: "Desarrollado para la agencia Quiebre.cl",
+  } 
+  ,
+  {
+    id: 9,
+    col: 3,
     img: portfolio_img_5,
     category: "Nuxt 3 + Tailwind",
     title: "almachamisero.cl",

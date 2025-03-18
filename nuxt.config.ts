@@ -52,9 +52,9 @@ export default defineNuxtConfig({
   ],
 
   robots: {
-    UserAgent: '*',
-    Allow: '/',
-    Sitemap: 'https://ecortes.cl/sitemap.xml'
+    allow: '/',
+    disallow: '',
+    sitemap: 'https://ecortes.cl/sitemap.xml'
   },
 
   site: {

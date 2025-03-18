@@ -43,6 +43,7 @@ if (typeof window !== "undefined") {
             <div class="logo">
               <NuxtLink to="/"
                 ><img
+                  class="main-logo"
                   src="~/assets/images/logos/logo.png"
                   alt="Logo"
                   title="Logo"
@@ -113,4 +114,3 @@ if (typeof window !== "undefined") {
     </div>
   </header>
 </template>
-

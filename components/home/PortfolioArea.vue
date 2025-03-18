@@ -92,7 +92,7 @@ const props = defineProps({
               <span class="portfolio-category">{{ item.category }}</span>
               <!-- Caption -->
               <div class="portfolio-caption">
-                <NuxtLink to="/single-project">
+                <NuxtLink :to="`/single-project/${item.id}`">
                   <h1>{{ item.title }}</h1>
                 </NuxtLink>
               </div>

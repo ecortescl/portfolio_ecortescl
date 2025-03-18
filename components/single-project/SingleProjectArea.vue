@@ -18,8 +18,23 @@ project_data: {
 <template>
 
   <div class="single-project-page-design">
-    <div class="single-project-image">
-      <img src="~/assets/images/projects/work2.jpg" alt="image" />
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2>A Branch with Flowers</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit utsadi
+            sfejdis aliquam, purus sit amet luctus venenatis, lectus magna
+            sansit trandis fringilla urna, porttitor rhoncus dolor purus non
+            enim dollors praesent tabasi elementum facilisis leo.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="single-project-image">
+            <img src="~/assets/images/projects/work2.webp" alt="image" />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container pt-60 pb-40 ">
       <div class="row">
@@ -70,21 +85,7 @@ project_data: {
         </div>
         <!-- / END SINGLE RIGHT DESIGN AREA -->
       </div>
-      <!-- START SINGLE PAGE GALLERY DESIGN AREA -->
-      <div class="row pt-60">
-        <div class="col-lg-6" v-for="(item, i) in project_data" :key="i">
-          <a
-            style="cursor: pointer"
-            @click.prevent="handleImagePopup(i)"
-            class="work-popup"
-          >
-            <div class="single-image wow fadeInUp delay-0-2s">
-              <img :src="item.img" alt="gallery" />
-            </div>
-          </a>
-        </div>
-      </div>
-      <!--  / END SINGLE PAGE GALLERY DESIGN AREA -->
+     
     </div>
     
   </div>

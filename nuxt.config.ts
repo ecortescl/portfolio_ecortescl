@@ -53,8 +53,7 @@ export default defineNuxtConfig({
 
   robots: {
     allow: '/',
-    disallow: '',
-    sitemap: 'https://ecortes.cl/sitemap.xml'
+    disallow: ['/api/**', '/_nuxt/**']
   },
 
   site: {

@@ -7,8 +7,7 @@
           <div class="col-lg-12 text-center">
             <div class="copyright-text">
               <p>
-                  © Copyright {{ new Date().getFullYear() }} <NuxtLink to="/">Wize</NuxtLink> All Rights
-                Reserved.
+                  © Copyright {{ new Date().getFullYear() }} <NuxtLink to="/">eCortes.cl</NuxtLink> Todos los derechos reservados
               </p>
             </div>
           </div>

@@ -1,46 +1,3 @@
-<script setup>
-import { ref, onMounted, onUnmounted, computed } from 'vue';
-import { useRoute } from 'vue-router';
-
-// menu sticky 
-const isSticky = ref(false);
-const handleSticky = () => {
-  if (window.scrollY > 80) {
-    isSticky.value = true;
-  } else {
-    isSticky.value = false;
-  }
-};
-
-onMounted(() => {
-  window.addEventListener('scroll', handleSticky);
-  window.addEventListener('resize', handleResize);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleSticky);
-  window.removeEventListener('resize', handleResize);
-});
-
-const isMenuOpen = ref(false);
-const route = useRoute();
-const currentRoute = computed(() => route.path);
-
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-};
-
-const handleResize = () => {
-  if (window.innerWidth > 768) {
-    isMenuOpen.value = false;
-  }
-};
-
-if (typeof window !== "undefined") {
-  import("bootstrap/dist/js/bootstrap");
-}
-</script>
-
 <template>
   <header :class="`main-header ${isSticky ? 'fixed-header' : ''}`">
     <div class="header-upper">
@@ -105,7 +62,49 @@ if (typeof window !== "undefined") {
     </div>
   </header>
 </template>
+<script>
 
-<style scoped>
-/* ... estilos existentes ... */
-</style>
+export default {
+  name: 'Header',
+  data() {
+    return {
+      isSticky: false,
+      isMenuOpen: false
+    }
+  },
+  computed: {
+    currentRoute() {
+      return this.$route.path;
+    }
+  },
+  methods: {
+    handleSticky() {
+      if (window.scrollY > 80) {
+        this.isSticky = true;
+      } else {
+        this.isSticky = false;
+      }
+    },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+    handleResize() {
+      if (window.innerWidth > 768) {
+        this.isMenuOpen = false;
+      }
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleSticky);
+    window.addEventListener('resize', this.handleResize);
+    
+    if (typeof window !== "undefined") {
+      import("bootstrap/dist/js/bootstrap");
+    }
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.handleSticky);
+    window.removeEventListener('resize', this.handleResize);
+  }
+}
+</script>

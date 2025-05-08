@@ -1,4 +1,3 @@
-
 <script setup>
 import portfolio_data from "~/data/portfolio_data";
 import { gsap } from 'gsap';
@@ -31,6 +30,7 @@ onMounted(() => {
 import { ref } from "vue";
 import ImagePopup from "~/components/common/ImagePopup.vue";
 import "vue-easy-lightbox/external-css/vue-easy-lightbox.css";
+import ChatIA from '~/components/common/ChatIA.vue';
 
 const image_popup = ref(null);
 
@@ -52,7 +52,8 @@ function handleImagePopup(index) {
           <HomeHeroArea />
           <HomePortfolioArea :handleImagePopup="handleImagePopup" :portfolio_data="portfolio_data"  /> 
           <HomeBrandArea />
-          <HomeCtaArea /> 
+           
+          <ChatIA class="mt-10" />
           <Footer />
         </main>
       </div>
